@@ -145,7 +145,7 @@ def ask_assets(message):
 
     assets = user_data[chat_id]['assets_list']
     markup = ReplyKeyboardMarkup(row_width=3, resize_keyboard=True)
-    for asset in assets[:20]: 
+    for asset in assets:
         markup.add(KeyboardButton(asset))
     markup.add(KeyboardButton('✅ Done (I finished adding)'))
     
